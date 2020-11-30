@@ -1,0 +1,161 @@
+/************************ ПОДВАЛ ОБОИХ СТРАНИЦ *************************/
+.footer-main{
+    margin-top: 94px;
+    padding-top: 60px;
+    padding-bottom: 0;
+    
+    height: 252px;
+    background-color: $bg-box;
+}
+.container-footer {
+
+    margin-left: auto;
+    margin-right: auto;
+/*outline: 2px solid tomato; */
+    width: 1200px;
+    padding: 0 15px;
+    display: flex;
+    align-items: baseline;
+}
+
+
+.footer-link
+{
+
+    font-style: normal;
+    color: $white-gray;
+ 
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    list-style: none;
+    padding-left: 0;
+    margin-top: 20px;
+}
+.link.footer-adress
+{
+    color: $white;        
+}
+.footer-margin {
+    margin-bottom: 9px;   
+}
+
+.webstudio-footer {
+    color: $white;
+    
+}
+
+.join { 
+   color: $white;
+    margin-left: 70px;
+   
+    width: 206px;
+    height: 86px;
+    
+
+
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.43;
+    letter-spacing: 0.03em;
+    
+    text-decoration: none;
+    /* background-color: red; */
+}
+
+.container-join{
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin-top: 22px;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content:space-between;
+  
+}
+
+
+.subscribe { 
+    position: relative;
+    color: $white;
+     margin-left: 93px;
+     padding: 0;
+     
+     width: 570px;
+     height: 86px;
+     text-transform: uppercase;
+ 
+
+     font-style: normal;
+     font-weight: bold;
+     font-size: 14px;
+     line-height: 1.43;
+     letter-spacing: 0.03em;
+     
+     text-decoration: none;
+     /* background-color: aqua; */
+}
+.btn-subscribe{
+    font-family: inherit;
+    color: $white;
+    border-radius: 4px;
+    border-color: $accent-cl;
+    background-color: $accent-cl;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+
+    
+    width: 200px;
+    height: 50px;
+    border: 1px solid $accent-cl;
+
+    display: flex;
+    position: absolute;
+    top: 36px;
+    left: 370px;
+    margin-top: 0;
+    margin-left: 0;
+    align-items: center;
+    padding-left: 29px;
+    padding-right: 28px;
+    background-image: url(../img/send.svg); 
+    background-size: 24px 24px;
+    background-position: 88%;
+    background-repeat: no-repeat;
+}
+
+.in-subscribe{
+    
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.25;
+  
+    align-items: center;
+    letter-spacing: 0.03em;
+
+    color: rgba(255, 255, 255, 0.6);
+    background-color:$bg-box;
+    width: 358px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+
+    display: flex;
+    position: absolute;
+    top: 36px;
+    left: 0;
+    padding-left: 16px;
+
+}
+
+
+/* ******************************************************************************* */

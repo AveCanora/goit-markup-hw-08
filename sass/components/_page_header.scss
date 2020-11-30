@@ -1,0 +1,118 @@
+/********************** оформление текста шапки и подвала***********************/
+
+.main-nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.webstudio {
+    font-family: Raleway;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 26px;
+    line-height: 1.192;
+    letter-spacing: 0.03em;
+    text-decoration: none; /* Отменяем подчеркивание у ссылки */  
+}
+.webstudio-header {
+    color: $black; 
+}
+
+.auth-nav {
+    display: flex;
+    margin-left: auto;
+        .link {
+        display: flex;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.143;
+        letter-spacing: 0.02em;  
+        color: inherit;
+        text-decoration: none;
+    }
+}
+
+.link:hover,
+.link:focus{
+    color:$accent-cl;
+} 
+/* текущая страница - голубого цвета пункт меню*/
+.link.current {
+color: $accent-cl;
+}
+.link.current::after{
+    position: relative;
+    top: 32px;
+    content: "";
+    display: block;
+    height: 4px;
+    background: #2196F3;
+    border-radius: 2px;
+}
+
+.link {
+    color: inherit;
+    text-decoration: none;
+}
+
+.auth-nav .item +.item {
+    margin-left: 50px;
+    
+}
+
+/*меню -расстановка отступов*/
+.list {
+    padding: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-right: 0;
+    list-style: none;
+}
+
+
+.site-nav{
+    display: flex;
+    margin-left: 93px;
+    
+}
+
+.accent{
+    color: $accent-cl;
+}
+
+
+.auth-icon-svg{
+
+    width: 16px;
+    height: 16px;
+    fill: currentColor;
+    margin-right: 10px;
+}
+.item .link{
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+.site-nav .link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.143;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+ 
+}
+
+/* ниже код заменяет выше - всем применить отступ кроме первого*/
+
+.site-nav .item + .item{
+    margin-left: 50px; 
+}
+
+
+/* *********************************************************************** */

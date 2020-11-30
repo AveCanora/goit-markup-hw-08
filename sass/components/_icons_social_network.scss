@@ -1,0 +1,46 @@
+@mixin _icon($backgroundColor) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    background-color: $backgroundColor; 
+    border-radius: 50%;
+    &:hover,
+    &:focus {
+        background-color:$accent-cl;
+    }
+}
+
+.team-icon-link{
+@include _icon($backgroundColor:  $white);
+&:hover .team-icon-svg,
+&:focus .team-icon-svg{
+    fill:$white;  
+}
+}
+
+.join-icon-link{
+@include _icon($backgroundColor:  $bg-icon);
+&:hover .team-icon-svg,
+&:focus .team-icon-svg{
+    fill:$white;  
+}
+}
+
+
+.team-icon-svg{
+    width: 20px;
+    height: 20px;
+    fill: $cl-icon;
+}
+.join-icon-svg{
+    width: 20px;
+    height: 20px;
+    fill: $white;
+}
+
+
+
+
+

@@ -1,0 +1,39 @@
+/***************************** СЕКЦИЯ ЧЕМ МЫ ЗАНИМАЕМСЯ *********************************/
+
+/* используется не только в этой секции */
+.title-h2 {
+    
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.167;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $h-color;
+    margin: 0px 0px 50px 0px;  
+
+}
+
+.title-img{
+ 
+    display: flex;
+    position: relative; 
+    width: 370px;
+    height: 70px;
+    
+    background-color: rgba(47, 48, 58, 0.8);   
+
+    margin: 0px;
+    padding: 0px;
+    bottom: 70px;
+    
+    text-align: center;
+   
+  
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.143;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $white;
+
+}

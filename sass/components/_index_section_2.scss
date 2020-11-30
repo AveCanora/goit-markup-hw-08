@@ -1,0 +1,61 @@
+/********************** СЕКЦИЯ НАШИ ПРЕИМУЩЕСТВА **********************/
+
+.container-advantages {
+    display: flex;
+    list-style: none;  
+    margin-top: 94px;
+    margin-bottom: 94px;
+
+}
+
+.p-advantages {
+    
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: $gray;
+    width: 270px;
+    height: 75px;
+    margin: 0;
+    margin-top: 10px;
+}
+
+.icon-advantages::before{
+    content: "";
+    display: block;
+    margin-bottom: 30px;
+    height: 120px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color:$bg-btn;  
+}
+.title-h3{
+    
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $h-color;
+    margin:0;
+    padding: 0;
+}
+.icon1::before{
+    background-image: url(../img/advantages-icon1.svg); 
+}
+
+.icon2::before{
+    background-image: url(../img/advantages-icon2.svg); 
+}
+
+.icon3::before{
+    background-image: url(../img/advantages-icon3.svg); 
+}
+
+.icon4::before{
+    background-image: url(../img/advantages-icon4.svg); 
+}
+
+/* ***************************************************************** */

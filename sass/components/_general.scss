@@ -1,0 +1,43 @@
+/*Задать box-sizing: border-box;
+чтобы все внутренние отступы и границы всчитывались в размеры
+элемента. */
+html{
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after{
+box-sizing: inherit;
+}
+/*Базовое оформление*/
+body {
+    font-family: $mainFont;
+    font-style: normal;       
+}
+img{
+    
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    padding: 0 15px;
+    justify-content:space-between;
+   
+}
+
+.center-container {
+    display: flex;
+    list-style: none;
+    padding: 0px 15px 0px 15px;
+    
+}
+.a-link {
+    display: block;
+    text-decoration: none;
+}

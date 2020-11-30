@@ -1,0 +1,45 @@
+/*************************** СЕКЦИЯ ПОСТОЯННЫЕ КЛИЕНТЫ ***************************/
+
+.client-section{
+ 
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 94px;
+    padding-bottom: 0px;
+    text-align: center;
+}
+
+.client-icon-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 90px;
+    outline: 1px solid $cl-icon; 
+    margin-bottom: 0px;
+    margin-top: 0px;
+    &:hover,
+    &:focus {
+        outline: 1px solid $accent-cl; 
+    } 
+
+
+    
+}
+
+
+.client-icon-svg{
+
+    fill: $cl-icon;
+ 
+}
+
+.client-icon-link {
+    &:hover .client-icon-svg,
+    &:focus .client-icon-svg{
+        fill:$accent-cl;
+        
+    }
+}
+
+/* ******************************************************* */
