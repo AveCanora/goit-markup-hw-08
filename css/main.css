@@ -358,12 +358,6 @@ body {
   font-style: normal;
 }
 
-@media (min-width: 800px) {
-  body {
-    background-color: aqua;
-  }
-}
-
 img {
   display: block;
   max-width: 100%;
@@ -374,11 +368,31 @@ img {
   margin: 0;
   margin-left: auto;
   margin-right: auto;
-  width: 1200px;
   padding: 0 15px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 450px;
+    outline: 2px solid tomato;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 738px;
+    outline: 2px solid blue;
+  }
+}
+
+@media screen and (min-width: 1140px) {
+  .container {
+    width: 1200px;
+    outline: 2px solid green;
+  }
 }
 
 .center-container {
@@ -1137,6 +1151,24 @@ img {
   border-radius: 0px 0px 4px 4px;
 }
 
+@media screen and (min-width: 480px) {
+  .team-li {
+    height: 622px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .team-li {
+    height: 536px;
+  }
+}
+
+@media screen and (min-width: 1140px) {
+  .team-li {
+    height: 428px;
+  }
+}
+
 .team-name {
   font-weight: 500;
   font-size: 16px;
@@ -1162,6 +1194,27 @@ img {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 0;
+}
+
+@media screen and (min-width: 480px) {
+  .container-social-network {
+    width: 450px;
+    outline: 2px solid tomato;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container-social-network {
+    width: 354px;
+    outline: 2px solid blue;
+  }
+}
+
+@media screen and (min-width: 1140px) {
+  .container-social-network {
+    width: 270px;
+    outline: 2px solid green;
+  }
 }
 
 .center-network {
