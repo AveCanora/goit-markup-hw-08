@@ -4,7 +4,7 @@
     position: relative;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: space-between;
 }
 .button-menu{
     display: inline-flex;
@@ -12,6 +12,9 @@
     padding: 0;
     border: none;
     background-color: transparent;
+    @media screen and (min-width: $tablet){
+        display: none;
+    }
 }
 .button-menu .icon-close{
     display: none;
@@ -29,22 +32,47 @@
     fill: $accent-cl;
 }
 .menu-container{
-    display: none;
-    position: absolute;
-    top: 100%;
+   
+    padding: 0px;
     background-color: $white;
-    padding: 20px;
-    left: 0;
     width: 100%;
-    height: 453px;
+    // height: 453px;
     text-align: center;
     font-size: 20px;
-    &.is-open{
-        display: block;
+
+    @media screen and (max-width: 737px){
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        &.is-open{
+            display: block;
+        }
+    }
+    @media screen and (min-width: $tablet){
+        display: flex;
+        justify-content: space-between;
+        flex-grow: 1;
     }
 }
 
+// .navigation, .contacts{
+
+// }
+.navigation{
+    
+    outline: 1px solid orange;
+    margin: 0;
+    padding: 0;
+}
+.contacts{
+    outline: 1px solid antiquewhite;
+    margin: 0;
+    padding: 0;
+}
+
 .webstudio {
+ 
     font-family: Raleway;
     font-weight: 700;
     font-style: normal;
@@ -111,10 +139,19 @@ color: $accent-cl;
 
 
 .site-nav{
-    display: flex;
-    margin-left: 93px;
-    
+
+    @media screen and (max-width:$desktop){
+        display: flex;
+        margin-left: 93px;
+    }
+    @media screen and (max-width:737px){
+        display: block;
+        margin-left: 0px;
+    }
+
 }
+    
+
 
 .accent{
     color: $accent-cl;
