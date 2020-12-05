@@ -13,9 +13,10 @@
 <body>
     <!-- ШАПКА САЙТА -->
     <header>
-        <nav class="container main-nav">
+        <nav class="main-nav container">
             <a href="index.html" class="webstudio webstudio-header"><span class="accent">Web</span>Studio</a>
-            <button type="button" class="button-menu is-open" data-menu-button aria-expanded="false">
+            <button type="button" class="button-menu" aria-expanded="false" aria-controls="menu-container"
+                data-menu-button>
 
                 <svg width="40" height="40" aria-label="Переключатель мобильного меню">
                     <use class="icon-close" href="./img/icon/sprite.svg#close"></use>
@@ -23,7 +24,7 @@
 
                 </svg>
             </button>
-            <div class="menu-container">
+            <div class="menu-container" id="menu-container" data-menu>
                 Контент меню
             </div>
             <ul class="site-nav list">
