@@ -5,14 +5,18 @@
 }
 .reviews-set{
     @extend %list;
+    display: flex;
     }
     
     .reviews-item{
         text-align: center;
-        padding-top: 40px;
-        padding-bottom: 20px;
+        padding: 40px;
         color: $white;
         font-size: 48px;
+        width: 33.33333%;
+        @media screen and (min-width: $desktop) {
+            font-size: 64px;
+        }
     }
     
     $colors: "#795548","#60708B","#7B1FA2";
