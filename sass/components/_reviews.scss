@@ -1,0 +1,14 @@
+.reviews-set{
+    @extend %list;
+    }
+    
+    .reviews-item{
+        text-align: center;
+        padding-top: 40px;
+        padding-bottom: 20px;
+        color: $white;
+        font-size: 48px;
+    }
+    
+    $colors: "#795548","#60708B","#7B1FA2";
+    @include colorize($colors,".reviews-item");

@@ -1,4 +1,9 @@
+
 @import "./variables";
+
+
+
+
 @import "./base/normalize";
 @import "./base/fonts";
 
@@ -16,3 +21,8 @@
 @import "./components/index_section_5";
 @import "./components/portfolio_section_1";
 @import "./components/portfolio_section_2";
+
+@import "./util/placeholder";
+@import "./util/mixin";
+@import "./components/features";
+@import "./components/reviews";

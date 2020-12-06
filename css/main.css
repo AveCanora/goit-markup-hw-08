@@ -354,6 +354,7 @@ html {
 
 /*Базовое оформление*/
 body {
+  margin: 0;
   font-family: "Roboto", sans-serif;
   font-style: normal;
 }
@@ -362,40 +363,6 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
-}
-
-.container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 0;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0 15px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-@media screen and (min-width: 450px) {
-  .container {
-    width: 450px;
-    outline: 2px solid tomato;
-  }
-}
-
-@media screen and (min-width: 738px) {
-  .container {
-    width: 738px;
-    outline: 2px solid blue;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .container {
-    width: 1200px;
-    outline: 2px solid green;
-  }
 }
 
 .center-container {
@@ -409,6 +376,67 @@ img {
 .a-link {
   display: block;
   text-decoration: none;
+}
+
+.feautures-item, .revews-set {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.container {
+  padding-left: 15 px;
+  padding-right: 15 px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 450px) {
+  .container {
+    width: 450px;
+    outline: 2px solid sienna;
+  }
+}
+
+@media screen and (min-width: 450px) {
+  .container {
+    width: 450px;
+    outline: 2px solid sienna;
+  }
+}
+
+@media screen and (min-width: 738px) {
+  .container {
+    width: 738px;
+    outline: 2px solid blue;
+  }
+}
+
+.section {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+section.title {
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+
+.page-header {
+  border-bottom: 2px solid black;
+}
+
+.page-header .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  min-height: 80px;
 }
 
 /********************** оформление текста шапки и подвала***********************/
@@ -631,14 +659,6 @@ img {
 }
 
 /*меню -расстановка отступов*/
-.list {
-  padding: 0px;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  margin-right: 0;
-  list-style: none;
-}
-
 .site-nav .link {
   display: block;
   font-weight: 500;
@@ -1623,4 +1643,61 @@ img {
 }
 
 /* ********************************************************************* */
+.features-set, .reviews-set {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.features-item {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #ffffff;
+  font-size: 32px;
+}
+
+.features-item:nth-child(1) {
+  background-color: #F44336;
+}
+
+.features-item:nth-child(2) {
+  background-color: #3f51b5;
+}
+
+.features-item:nth-child(3) {
+  background-color: #4CAF50;
+}
+
+.features-item:nth-child(4) {
+  background-color: #00BCD4;
+}
+
+.features-item:nth-child(5) {
+  background-color: #E91E63;
+}
+
+.features-item:nth-child(6) {
+  background-color: #009688;
+}
+
+.reviews-item {
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  color: #ffffff;
+  font-size: 48px;
+}
+
+.reviews-item:nth-child(1) {
+  background-color: #795548;
+}
+
+.reviews-item:nth-child(2) {
+  background-color: #60708B;
+}
+
+.reviews-item:nth-child(3) {
+  background-color: #7B1FA2;
+}
 /*# sourceMappingURL=main.css.map */
