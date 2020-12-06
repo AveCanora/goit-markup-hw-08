@@ -58,15 +58,15 @@ img{
     //     width: 450px;
     //     outline: 2px solid sienna;
     // }
-    @media screen and (min-width: 450px) {
+    @media screen and (min-width: $mobile) {
         width: 450px;
         outline: 2px solid sienna;
     }
-    @media screen and (min-width: 738px) {
+    @media screen and (min-width: $tablet) {
         width: 738px;
         outline: 2px solid blue;
     }
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: $desktop) {
         width: 1200px;
         outline: 2px solid green;
 
