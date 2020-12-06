@@ -385,15 +385,15 @@ img {
 }
 
 .container {
-  padding-left: 15 px;
-  padding-right: 15 px;
+  padding-left: 15px;
+  padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
 }
 
-@media screen and (min-width: 450px) {
+@media screen and (min-width: 480px) {
   .container {
-    width: 450px;
+    width: 480px;
     outline: 2px solid sienna;
   }
 }
@@ -424,6 +424,7 @@ section.title {
 
 .page-header {
   border-bottom: 2px solid black;
+  position: relative;
 }
 
 .page-header .nav {
@@ -440,19 +441,6 @@ section.title {
 }
 
 /********************** оформление текста шапки и подвала***********************/
-.main-nav {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
 .button-menu {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -494,6 +482,7 @@ section.title {
 }
 
 .menu-container {
+  position: absolute;
   padding: 0px;
   background-color: #ffffff;
   width: 100%;
@@ -502,7 +491,7 @@ section.title {
   font-size: 20px;
 }
 
-@media screen and (max-width: 738px) {
+@media screen and (max-width: 737px) {
   .menu-container {
     display: none;
     position: absolute;
@@ -580,7 +569,7 @@ section.title {
   text-decoration: none;
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 737px) {
   .auth-nav .link {
     padding-bottom: 16px;
     font-size: 18px;
@@ -646,7 +635,7 @@ section.title {
   text-decoration: none;
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 480px) {
   .auth-nav .item + .item {
     margin-left: 0px;
   }
@@ -659,8 +648,15 @@ section.title {
 }
 
 /*меню -расстановка отступов*/
+@media screen and (min-width: 737px) {
+  .site-nav {
+    padding-top: 60px;
+  }
+}
+
 .site-nav .link {
   display: block;
+  padding-top: 0px;
   font-weight: 500;
   font-style: normal;
   line-height: 1.143;
@@ -668,7 +664,7 @@ section.title {
   text-decoration: none;
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 737px) {
   .site-nav .link {
     padding-bottom: 40px;
     font-size: 18px;
@@ -719,7 +715,7 @@ section.title {
           justify-content: center;
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 480px) {
   .site-nav .item + .item {
     margin-left: 0px;
   }
@@ -1643,7 +1639,7 @@ section.title {
 }
 
 /* ********************************************************************* */
-.features-set, .reviews-set {
+.auth-nav, .site-nav, .features-set, .reviews-set {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -1657,6 +1653,12 @@ section.title {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     margin: -5px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .features-set {
+    margin: -10px;
   }
 }
 

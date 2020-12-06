@@ -40,9 +40,15 @@ img{
     list-style: none;
 }
 
+// .nav{
+//     position: relative;
+//     display: flex;
+//     align-items: center;
+//     justify-content: space-between;
+// }
 .container {
-    padding-left: 15 px;
-    padding-right: 15 px;
+    padding-left: 15px;
+    padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
 
@@ -59,15 +65,15 @@ img{
     //     outline: 2px solid sienna;
     // }
     @media screen and (min-width: $mobile) {
-        width: 450px;
+        width: $mobile;
         outline: 2px solid sienna;
     }
     @media screen and (min-width: $tablet) {
-        width: 738px;
+        width: $tablet;
         outline: 2px solid blue;
     }
     @media screen and (min-width: $desktop) {
-        width: 1200px;
+        width: $desktop;
         outline: 2px solid green;
 
     }
@@ -84,9 +90,11 @@ section.title {
 }
 .page-header{
     border-bottom: 2px solid black;
+    position: relative;
 }
 
 .page-header .nav{
+    
     display: flex;
     align-items: center;
     justify-content: space-between;
