@@ -521,10 +521,16 @@ section.title {
 }
 
 .navigation {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   outline: 1px solid orange;
 }
 
 .contacts {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   outline: 1px solid green;
 }
 
@@ -598,6 +604,9 @@ section.title {
 
 .auth-nav .item + .item {
   margin-left: 0px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
 }
 
 @media screen and (max-width: 737px) {
