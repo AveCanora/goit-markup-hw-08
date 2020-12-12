@@ -710,15 +710,28 @@ section.title {
 .container-footer {
   margin-left: auto;
   margin-right: auto;
-  /*outline: 2px solid tomato; */
+  outline: 2px solid tomato;
   width: 1200px;
   padding: 0 15px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .container-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .footer-link {
@@ -747,7 +760,6 @@ section.title {
 
 .join {
   color: #ffffff;
-  margin-left: 70px;
   width: 206px;
   height: 86px;
   font-style: normal;
@@ -757,6 +769,12 @@ section.title {
   letter-spacing: 0.03em;
   text-decoration: none;
   /* background-color: red; */
+}
+
+@media (min-width: 1200px) {
+  .join {
+    margin-left: 70px;
+  }
 }
 
 .container-join {
@@ -775,9 +793,7 @@ section.title {
 }
 
 .subscribe {
-  position: relative;
   color: #ffffff;
-  margin-left: 93px;
   padding: 0;
   width: 570px;
   height: 86px;
@@ -789,6 +805,12 @@ section.title {
   letter-spacing: 0.03em;
   text-decoration: none;
   /* background-color: aqua; */
+}
+
+@media (min-width: 1200px) {
+  .subscribe {
+    position: relative;
+  }
 }
 
 .btn-subscribe {
@@ -805,12 +827,6 @@ section.title {
   width: 200px;
   height: 50px;
   border: 1px solid #2196F3;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: absolute;
-  top: 36px;
-  left: 370px;
   margin-top: 0;
   margin-left: 0;
   -webkit-box-align: center;
@@ -822,6 +838,17 @@ section.title {
   background-size: 24px 24px;
   background-position: 88%;
   background-repeat: no-repeat;
+}
+
+@media (min-width: 1200px) {
+  .btn-subscribe {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    top: 36px;
+    left: 370px;
+  }
 }
 
 .in-subscribe {
@@ -846,10 +873,15 @@ section.title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: absolute;
-  top: 36px;
-  left: 0;
-  padding-left: 16px;
+}
+
+@media (min-width: 1200px) {
+  .in-subscribe {
+    position: absolute;
+    top: 36px;
+    left: 0;
+    padding-left: 16px;
+  }
 }
 
 /* ******************************************************************************* */
@@ -1475,12 +1507,22 @@ section.title {
 /*************************** СЕКЦИЯ ПОСТОЯННЫЕ КЛИЕНТЫ ***************************/
 @media (min-width: 480px) {
   .client-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     margin: -5px;
   }
 }
 
 @media (max-width: 767px) {
   .client-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     margin: -5px;
   }
 }
@@ -1502,14 +1544,6 @@ section.title {
   }
 }
 
-@media (min-width: 480px) {
-  .item-client {
-    -ms-flex-preferred-size: calc((100% - 4 * 5px)/2);
-        flex-basis: calc((100% - 4 * 5px)/2);
-    margin: 5px;
-  }
-}
-
 @media (min-width: 768px) {
   .item-client {
     -ms-flex-preferred-size: calc((100% - 6 * 15px)/3);
@@ -1527,6 +1561,11 @@ section.title {
 }
 
 @media (max-width: 767px) {
+  .item-client {
+    -ms-flex-preferred-size: calc((100% - 4 * 10px)/2);
+        flex-basis: calc((100% - 4 * 10px)/2);
+    margin: 10px;
+  }
   .item-client:not(:last-child) {
     margin-bottom: 30px;
   }

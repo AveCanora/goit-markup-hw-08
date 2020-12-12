@@ -3,9 +3,13 @@
 .client-section{
     @extend %list;
     @include for-size(mobile){
+        display: flex;
+        flex-wrap: wrap;
         margin: -5px;
     }
     @include for-size(tablet-only){
+        display: flex;
+        flex-wrap: wrap;
         margin: -5px;
     }
     @include for-size(tablet) {
@@ -26,10 +30,10 @@
 .item-client{
 
     
-    @include for-size(mobile){
-        flex-basis: calc((100% - 4 * 5px)/2);
-        margin: 5px;
-    }
+    // @include for-size(mobile){
+    //     flex-basis: calc((100% - 4 * 5px)/2);
+    //     margin: 5px;
+    // }
     @include for-size(tablet){
         flex-basis: calc((100% - 6 * 15px)/3);
         margin: 15px;
@@ -40,8 +44,8 @@
     }
     @include for-size(tablet-only)
     {
-        // flex-basis: calc((100% - 4 * 5px)/2);
-        // margin: 5px;
+        flex-basis: calc((100% - 4 * 10px)/2);
+        margin: 10px;
         &:not(:last-child){
             margin-bottom: 30px;
         }

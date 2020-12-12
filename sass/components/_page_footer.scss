@@ -11,11 +11,20 @@
 
     margin-left: auto;
     margin-right: auto;
-/*outline: 2px solid tomato; */
+    outline: 2px solid tomato;
     width: 1200px;
     padding: 0 15px;
-    display: flex;
-    align-items: baseline;
+    justify-content: center;
+    @include for-size(tablet){
+        display: flex;
+       
+    }
+    
+    @include for-size(desktop){
+        display: flex;
+    }
+    
+    // align-items: baseline;
 }
 
 
@@ -48,8 +57,10 @@
 
 .join { 
    color: $white;
+
+   @include for-size(desktop){
     margin-left: 70px;
-   
+   }
     width: 206px;
     height: 86px;
     
@@ -66,6 +77,7 @@
 }
 
 .container-join{
+    
     display: flex;
     list-style: none;
     padding: 0;
@@ -79,9 +91,11 @@
 
 
 .subscribe { 
+    @include for-size(desktop){
     position: relative;
+    }
     color: $white;
-     margin-left: 93px;
+     
      padding: 0;
      
      width: 570px;
@@ -115,10 +129,14 @@
     height: 50px;
     border: 1px solid $accent-cl;
 
+    
+    @include for-size(desktop){
     display: flex;
     position: absolute;
     top: 36px;
     left: 370px;
+    }
+
     margin-top: 0;
     margin-left: 0;
     align-items: center;
@@ -150,10 +168,13 @@
     border-radius: 4px;
 
     display: flex;
+    @include for-size(desktop){
     position: absolute;
     top: 36px;
     left: 0;
     padding-left: 16px;
+    }
+
 
 }
 
