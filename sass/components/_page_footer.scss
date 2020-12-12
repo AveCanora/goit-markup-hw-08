@@ -1,5 +1,9 @@
 /************************ ПОДВАЛ ОБОИХ СТРАНИЦ *************************/
 .footer-main{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 94px;
     padding-top: 60px;
     padding-bottom: 0;
@@ -7,6 +11,7 @@
     height: 252px;
     background-color: $bg-box;
 }
+
 .container-footer {
 
     margin-left: auto;
@@ -26,7 +31,6 @@
     
     // align-items: baseline;
 }
-
 
 .footer-link
 {
@@ -93,13 +97,14 @@
 .subscribe { 
     @include for-size(desktop){
     position: relative;
+    width: 570px;
+    height: 86px;
     }
     color: $white;
      
      padding: 0;
      
-     width: 570px;
-     height: 86px;
+
      text-transform: uppercase;
  
 
