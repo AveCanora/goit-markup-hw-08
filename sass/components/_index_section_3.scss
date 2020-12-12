@@ -20,9 +20,9 @@
 }
 
 .title-img{
- 
+    position: absolute;
     display: flex;
-    position: relative; 
+   
     width: 370px;
     height: 70px;
     
@@ -30,7 +30,7 @@
 
     margin: 0px;
     padding: 0px;
-    bottom: 70px;
+    bottom: 0px;
     
     text-align: center;
    
