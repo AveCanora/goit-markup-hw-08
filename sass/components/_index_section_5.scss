@@ -55,17 +55,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 90px;
     @include for-size(mobile){
         width: 210px;
-        height: 90px;
+        
     }
     @include for-size(tablet){
         width: 226px;
-        height: 90px;
+        
     }
     @include for-size(desktop){
         width: 170px;
-        height: 90px;
+        
     }
   
 
