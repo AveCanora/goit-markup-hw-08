@@ -23,15 +23,11 @@ img{
     max-width: 100%;
     height: auto;
 }
-.center-container {
-    display: flex;
-    list-style: none;
-    padding: 0px 15px 0px 15px;
-    
-}
+
 .a-link {
     display: block;
     text-decoration: none;
+    
 }
 
 .feautures-item, .revews-set{
@@ -51,6 +47,7 @@ img{
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
+    list-style: none;
 
 
     // display: flex;
@@ -80,9 +77,14 @@ img{
    
 }
 
+.center-container {
+    display: flex;
+    list-style: none;
+    justify-content:space-between;   
+}
 .section{
-    padding-top: 24px;
-    padding-bottom: 24px;
+    padding-top: 94px;
+    // padding-bottom: 47px;
 }
 section.title {
     margin-top: 0;

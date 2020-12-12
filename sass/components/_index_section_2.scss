@@ -1,13 +1,5 @@
 /********************** СЕКЦИЯ НАШИ ПРЕИМУЩЕСТВА **********************/
 
-.container-advantages {
-    display: flex;
-    list-style: none;  
-    margin-top: 94px;
-    margin-bottom: 94px;
-
-}
-
 .p-advantages {
     
     font-style: normal;
@@ -16,21 +8,13 @@
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: $gray;
-    width: 270px;
+
     height: 75px;
     margin: 0;
     margin-top: 10px;
+    text-align: justify;
 }
 
-.icon-advantages::before{
-    content: "";
-    display: block;
-    margin-bottom: 30px;
-    height: 120px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color:$bg-btn;  
-}
 .title-h3{
     
     font-weight: bold;
@@ -57,5 +41,64 @@
 .icon4::before{
     background-image: url(../img/advantages-icon4.svg); 
 }
+
+.features-set{
+    @extend %list;
+
+    @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -5px;
+    }
+    @media screen and (min-width: $desktop) {
+          margin: -15px;
+    }
+    
+} 
+    .icon-advantages{
+        padding: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+
+        color: $white;
+        font-size: 32px;
+
+      
+        @media screen and (min-width: $tablet) {
+            
+            flex-basis: calc((100% - 4 * 5px)/2);
+            margin: 5px;
+            }
+        @media screen and (min-width: $desktop) {
+            // flex-basis: calc((100% - 6* 10px)/3);
+            // margin: 10px;
+            flex-basis: calc((100% - 8* 15px)/4);
+            margin: 15px;
+
+            }
+        @media screen and (max-width: 737px) {
+
+            &:not(:last-child){
+                margin-bottom: 30px;
+            }
+        }
+    }
+
+
+.icon-advantages::before{
+    content: "";
+    display: block;
+    margin-bottom: 30px;
+    height: 120px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color:$bg-btn;  
+}
+   
+   
+    // $colors: "#F44336","#3f51b5","#4CAF50","#00BCD4","#E91E63","#009688";
+    // @include colorize($colors,".icon-advantages");
+    
+
 
 /* ***************************************************************** */
