@@ -7,8 +7,12 @@
     margin-top: 94px;
     padding-top: 60px;
     padding-bottom: 0;
-    
+    @include for-size(desktop){
     height: 252px;
+    }
+    @include for-size(tablet){
+        height: 603px;
+        }
     background-color: $bg-box;
 }
 
@@ -27,9 +31,10 @@
     
     @include for-size(desktop){
         display: flex;
+        align-items: baseline;
     }
     
-    // align-items: baseline;
+
 }
 
 .footer-link
@@ -96,9 +101,11 @@
 
 .subscribe { 
     @include for-size(desktop){
-    position: relative;
-    width: 570px;
-    height: 86px;
+        position: relative;
+        margin: 93px;
+        width: 570px;
+        height: 86px;
+        background-color: aqua;
     }
     color: $white;
      
@@ -136,10 +143,11 @@
 
     
     @include for-size(desktop){
-    display: flex;
-    position: absolute;
-    top: 36px;
-    left: 370px;
+        display: flex;
+        position: absolute;
+        top: 36px;
+        // left: 370px;
+        right: 0;
     }
 
     margin-top: 0;

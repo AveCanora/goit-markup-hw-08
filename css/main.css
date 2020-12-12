@@ -707,8 +707,19 @@ section.title {
   margin-top: 94px;
   padding-top: 60px;
   padding-bottom: 0;
-  height: 252px;
   background-color: #2F303A;
+}
+
+@media (min-width: 1200px) {
+  .footer-main {
+    height: 252px;
+  }
+}
+
+@media (min-width: 768px) {
+  .footer-main {
+    height: 603px;
+  }
 }
 
 .container-footer {
@@ -733,6 +744,9 @@ section.title {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
   }
 }
 
@@ -810,8 +824,10 @@ section.title {
 @media (min-width: 1200px) {
   .subscribe {
     position: relative;
+    margin: 93px;
     width: 570px;
     height: 86px;
+    background-color: aqua;
   }
 }
 
@@ -849,7 +865,7 @@ section.title {
     display: flex;
     position: absolute;
     top: 36px;
-    left: 370px;
+    right: 0;
   }
 }
 
