@@ -44,14 +44,14 @@
 
 .features-set{
     @extend %list;
+    @include for-size(tablet){
+        display: flex;
+        flex-wrap: wrap;
+        margin: -5px;
 
-    @media screen and (min-width: $tablet) {
-    display: flex;
-    flex-wrap: wrap;
-    margin: -5px;
     }
-    @media screen and (min-width: $desktop) {
-          margin: -15px;
+    @include for-size(desktop){
+             margin: -15px;
     }
     
 } 

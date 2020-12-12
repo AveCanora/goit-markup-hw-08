@@ -49,33 +49,33 @@ img{
     margin-right: auto;
     list-style: none;
 
-
-    // display: flex;
-    // margin: 0;
- 
-    // // width: 1200px;
-    // padding: 0 15px;
-    // justify-content:space-between;
-
-    // @media screen and (max-width: 450px) {
-    //     width: 450px;
-    //     outline: 2px solid sienna;
-    // }
-    @media screen and (min-width: $mobile) {
+    @include for-size(mobile) {
         width: $mobile;
         outline: 2px solid sienna;
     }
-    @media screen and (min-width: $tablet) {
+    @include for-size(tablet) {
         width: $tablet;
         outline: 2px solid blue;
     }
-    @media screen and (min-width: $desktop) {
+    @include for-size(desktop) {
         width: $desktop;
         outline: 2px solid green;
-
     }
-   
 }
+// использование миксина заменяет следующий код:
+    // @media screen and (min-width: $mobile) {
+        
+    // // }
+    // @media screen and (min-width: $tablet) {
+    //     width: $tablet;
+    //     outline: 2px solid blue;
+    // }
+    // @media screen and (min-width: $desktop) {
+    //     width: $desktop;
+    //     outline: 2px solid green;
+
+    // }
+
 
 .center-container {
     display: flex;
@@ -103,3 +103,10 @@ section.title {
     min-height: 60px;
 }
 
+// // usage
+// .my-box {
+//     padding: 10px;
+//     @include for-size(tablet) {
+//       padding: 20px;
+//     }
+//   }

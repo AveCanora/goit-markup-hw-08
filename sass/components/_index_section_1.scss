@@ -29,12 +29,14 @@ font-size: 44px;
 line-height: 1.364;
 letter-spacing: 0.06em;
 text-transform: uppercase;
-@media screen and (min-width: $desktop){
+@include for-size(desktop){
     width: 696px;
 }
-@media screen and (min-width: $tablet){
+
+@include for-size(tablet){
     width: 360px;
 }
+
 color: $white;
 
 margin: 0 auto;

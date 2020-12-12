@@ -2,7 +2,7 @@
 
 .team-section{
     
-    height: 708px;
+    // height: 708px;
     background-color: $bg-btn;
     margin-top: 94px;
     margin-bottom: 0;
@@ -12,16 +12,14 @@
 }
 .team-set{
     @extend %list;
-
-    @media screen and (min-width: $tablet) {
-    display: flex;
-    flex-wrap: wrap;
-    margin: -5px;
+    @include for-size(tablet){
+        display: flex;
+        flex-wrap: wrap;
+        margin: -5px;
     }
-    @media screen and (min-width: $desktop) {
-          margin: -15px;
+    @include for-size(desktop){
+             margin: -15px;
     }
-    
 } 
 .team-li {
 
@@ -31,28 +29,24 @@
  
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
-    @media screen and (min-width: $mobile) {
-        height: 622px;
-     
-    }
-    @media screen and (min-width: $tablet) {
+
+
+    @include for-size(mobile){height: 622px;}
+    @include for-size(tablet){
         height: 536px;
         flex-basis: calc((100% - 4 * 5px)/2);
         margin: 5px;
- 
     }
-    @media screen and (min-width: $desktop) {
+    @include for-size(desktop){
         height: 428px;
         flex-basis: calc((100% - 8* 15px)/4);
         margin: 15px;
     }
-    @media screen and (max-width: 737px) {
-
+    @include for-size(tablet-only){
         &:not(:last-child){
             margin-bottom: 30px;
         }
     }
-
 }
 
 .team-name {
@@ -80,19 +74,21 @@
     width: 270px;
     justify-content:space-between;
     padding: 0;
-    @media screen and (min-width: $mobile) {
+
+
+    @include for-size(mobile){
         width: 450px;
         outline: 2px solid tomato;
     }
-    @media screen and (min-width: $tablet) {
+    @include for-size(tablet){
         width: 354px;
         outline: 2px solid blue;
     }
-    @media screen and (min-width: $desktop) {
+    @include for-size(desktop){
         width: 270px;
         outline: 2px solid yellow;
-
     }
+
 }
 
 

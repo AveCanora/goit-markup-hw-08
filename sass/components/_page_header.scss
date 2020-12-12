@@ -11,7 +11,7 @@
     justify-content: space-between;
     background-color: transparent;
   
-    @media screen and (min-width: $tablet){
+    @include for-size(tablet){
         display: none;
     }
 }
@@ -41,13 +41,15 @@
     font-size: 18px;
     &.is-open{  
         display: block;
-        @media screen and (min-width: $tablet){
+
+        @include for-size(tablet){
             display: inline-flex;
             justify-content: space-between;
             // flex-grow: 1;
         }
     }
-    @media screen and (max-width: 767px){
+
+    @include for-size(tablet-only){
         display: none;
         height: 393px;
         position: absolute;
@@ -56,7 +58,7 @@
         width: 100%;
 
     }
-    @media screen and (min-width: $tablet){
+    @include for-size(tablet){
         display: inline-flex;
         justify-content: space-between;
         flex-grow: 2; 
@@ -91,7 +93,7 @@
 .site-nav{
     @extend %list;
 
-    @media screen and (min-width: $tablet){
+    @include for-size(tablet){
         .item{
             display: inline-flex;
             align-items: baseline;
@@ -102,7 +104,7 @@
             margin-right: 50px;
         }
     }
-    @media screen and (max-width:767px){
+    @include for-size(tablet-only){
         .item:first-child{
             padding-top: 60px;
 
@@ -117,7 +119,7 @@
 }
 .auth-nav {
     @extend %list;
-    @media screen and (min-width: $tablet){
+    @include for-size(tablet){
         .item{
             display: block;
             text-align: left;
@@ -125,14 +127,14 @@
         }
         
     }
-    @media screen and (min-width: $desktop){
+    @include for-size(desktop){
         .item{
             display: inline-flex;
             align-items: baseline;
         }
         
     }
-    @media screen and (max-width:767px){
+    @include for-size(tablet-only){
         .item:first-child{
             padding-top: 20px;
             font-size: 18px; 
@@ -197,9 +199,6 @@ color: $accent-cl;
     border-radius: 2px;
     margin-left: auto;
     margin-right: auto;
-
-    
-
 }
 
 
@@ -230,4 +229,3 @@ color: $accent-cl;
 .site-nav .item + .item{
     margin-left: 0px;         
 }
-
