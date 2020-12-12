@@ -713,9 +713,6 @@ section.title {
   outline: 2px solid tomato;
   width: 1200px;
   padding: 0 15px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 @media (min-width: 768px) {
@@ -723,6 +720,7 @@ section.title {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    text-align: center;
   }
 }
 

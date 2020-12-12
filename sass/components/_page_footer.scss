@@ -14,10 +14,10 @@
     outline: 2px solid tomato;
     width: 1200px;
     padding: 0 15px;
-    justify-content: center;
+    
     @include for-size(tablet){
         display: flex;
-       
+        text-align: center;
     }
     
     @include for-size(desktop){
