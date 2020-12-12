@@ -24,17 +24,22 @@ padding-top: 200px;
 }
 .title-h1{
 
-font-weight: 900;
-font-size: 44px;
-line-height: 1.364;
-letter-spacing: 0.06em;
+
+    font-weight: 900;
+    letter-spacing: 0.06em;
 text-transform: uppercase;
 @include for-size(desktop){
     width: 696px;
+
+    font-size: 44px;
+    line-height: 1.364;
+
 }
 
-@include for-size(tablet){
+@include for-size(tablet-only){
     width: 360px;
+    font-size:26px;
+    line-height: 1.615;
 }
 
 color: $white;

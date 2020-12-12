@@ -704,7 +704,6 @@ section.title {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 94px;
   padding-top: 60px;
   padding-bottom: 0;
   background-color: #2F303A;
@@ -713,12 +712,14 @@ section.title {
 @media (min-width: 1200px) {
   .footer-main {
     height: 252px;
+    margin-top: 94px;
   }
 }
 
-@media (min-width: 768px) {
+@media (max-width: 767px) {
   .footer-main {
     height: 603px;
+    margin-top: 45px;
   }
 }
 
@@ -797,6 +798,13 @@ section.title {
   }
 }
 
+@media (min-width: 480px) {
+  .join {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+}
+
 .container-join {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -831,14 +839,12 @@ section.title {
     margin-left: 93px;
     width: 570px;
     height: 86px;
-    background-color: aqua;
   }
 }
 
 @media (max-width: 767px) {
   .subscribe {
     width: 450px;
-    background-color: aqua;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -916,6 +922,13 @@ section.title {
   }
 }
 
+@media (min-width: 480px) {
+  .in-subscribe {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+
 /* ******************************************************************************* */
 /********************** СЕКЦИЯ ЭФФЕКТИВНЫЕ РЕШЕНИЯ **************************/
 .effect-solving {
@@ -934,8 +947,6 @@ section.title {
 
 .title-h1 {
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.364;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
@@ -946,12 +957,16 @@ section.title {
 @media (min-width: 1200px) {
   .title-h1 {
     width: 696px;
+    font-size: 44px;
+    line-height: 1.364;
   }
 }
 
-@media (min-width: 768px) {
+@media (max-width: 767px) {
   .title-h1 {
     width: 360px;
+    font-size: 26px;
+    line-height: 1.615;
   }
 }
 

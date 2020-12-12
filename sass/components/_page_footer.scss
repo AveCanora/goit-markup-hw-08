@@ -4,14 +4,16 @@
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 94px;
+
     padding-top: 60px;
     padding-bottom: 0;
     @include for-size(desktop){
     height: 252px;
+    margin-top: 94px;
     }
-    @include for-size(tablet){
+    @include for-size(tablet-only){
         height: 603px;
+        margin-top: 45px;
         }
     background-color: $bg-box;
 }
@@ -72,11 +74,13 @@
    @include for-size(desktop){
     margin-left: 70px;
    }
+
+@include for-size(mobile){
+    margin-top: 60px;
+    margin-bottom: 60px;
+ }
     width: 206px;
     height: 86px;
-    
-
-
     font-style: normal;
     font-weight: bold;
     font-size: 14px;
@@ -84,15 +88,17 @@
     letter-spacing: 0.03em;
     
     text-decoration: none;
-    /* background-color: red; */
+    /* background-color: red; */ 
 }
 
 .container-join{
-    
+
     display: flex;
     list-style: none;
     padding: 0;
     margin-top: 22px;
+
+
     margin-bottom: 0;
     margin-left: auto;
     margin-right: auto;
@@ -107,12 +113,12 @@
         margin-left: 93px;
         width: 570px;
         height: 86px;
-        background-color: aqua;
+        // background-color: aqua;
     }
     @include for-size(tablet-only){
 
         width: 450px;
-        background-color: aqua;
+        // background-color: aqua;
         align-items: center;
     }
         color: $white;
@@ -191,7 +197,10 @@
     padding-left: 16px;
     }
 
-
+    @include for-size(mobile){
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
 }
 
 
