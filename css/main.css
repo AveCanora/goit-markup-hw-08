@@ -845,7 +845,7 @@ section.title {
 
 @media (max-width: 767px) {
   .subscribe {
-    width: 450px;
+    width: 400px;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
