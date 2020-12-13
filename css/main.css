@@ -387,21 +387,18 @@ img {
 @media (min-width: 480px) {
   .container {
     width: 480px;
-    outline: 2px solid sienna;
   }
 }
 
 @media (min-width: 768px) {
   .container {
     width: 768px;
-    outline: 2px solid blue;
   }
 }
 
 @media (min-width: 1200px) {
   .container {
     width: 1200px;
-    outline: 2px solid green;
   }
 }
 
@@ -1686,21 +1683,18 @@ section.title {
 @media (min-width: 480px) {
   .container-social-network {
     width: 450px;
-    outline: 2px solid tomato;
   }
 }
 
 @media (min-width: 768px) {
   .container-social-network {
     width: 354px;
-    outline: 2px solid blue;
   }
 }
 
 @media (min-width: 1200px) {
   .container-social-network {
     width: 270px;
-    outline: 2px solid yellow;
   }
 }
 

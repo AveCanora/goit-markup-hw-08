@@ -102,15 +102,15 @@
 
     @include for-size(mobile){
         width: 450px;
-        outline: 2px solid tomato;
+        // outline: 2px solid tomato;
     }
     @include for-size(tablet){
         width: 354px;
-        outline: 2px solid blue;
+        // outline: 2px solid blue;
     }
     @include for-size(desktop){
         width: 270px;
-        outline: 2px solid yellow;
+        // outline: 2px solid yellow;
     }
 
 }

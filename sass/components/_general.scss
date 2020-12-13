@@ -51,15 +51,15 @@ img{
 
     @include for-size(mobile) {
         width: $mobile;
-        outline: 2px solid sienna;
+        // outline: 2px solid sienna;
     }
     @include for-size(tablet) {
         width: $tablet;
-        outline: 2px solid blue;
+        // outline: 2px solid blue;
     }
     @include for-size(desktop) {
         width: $desktop;
-        outline: 2px solid green;
+        // outline: 2px solid green;
     }
 }
 // использование миксина заменяет следующий код:
