@@ -1,4 +1,23 @@
 /* ***********************СТРАНИЦА ПОРТФОЛИО******************************** */
+.btn-container {
+
+    @include for-size(mobile){
+        text-align: left;
+        padding-top: 66px;
+    }
+    @include for-size(tablet){
+        text-align: center; 
+        padding-top: 60px;
+    }
+    @include for-size(desktop){
+        text-align: center;   
+        padding-top: 100px;
+    }
+
+
+    // padding-left: 280px;
+     
+ }
 .portfolio-header {
     border: none; /* Убираем границу */
     background-color:#ECECEC; /* Цвет линии */
@@ -40,7 +59,10 @@
     text-decoration: none;
     border: 1px solid $bg-btn;
     border-radius: 4px; 
+    
     padding: 6px 22px;
+
+
     &:hover,
     &:active
     {
@@ -68,11 +90,7 @@
     padding: 6px 22px;
     text-decoration: none;
 }
+
 .btn-container {
-   padding-top: 100px;
-    padding-left: 280px;
-    
-}
-.btn-container {
-	.item + .item {margin-left: 8px;}
+	.item + .item {margin-left: 8px; margin-top: 15px;}
 }
