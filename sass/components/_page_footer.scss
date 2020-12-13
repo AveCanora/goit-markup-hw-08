@@ -77,16 +77,13 @@
    @media screen and (max-width: 480px){
         display: block;
         margin-top: 60px;
-        margin-bottom: 60px;    
+  
 }
-    @include for-size(tablet){
-        margin-top: 0px;
- 
- 
-   }
+//     @include for-size(tablet){
+//         margin-top: 0px;
+//    }
    @include for-size(desktop){
-       display: flex;
-        margin-top: 0px;
+
         margin-left: 70px;
    }
 
@@ -127,6 +124,7 @@
         margin-left: 93px;
         width: 570px;
         height: 86px;
+        
         // background-color: aqua;
     }
     @include for-size(tablet-only){
@@ -134,10 +132,9 @@
         width: 400px;
         // background-color: aqua;
         align-items: center;
+        margin-top: 60px;
     }
-    // @include for-size(mobile){
-    //     margin-top: 60px;
-    // }
+    
 
         color: $white;
         padding: 0;

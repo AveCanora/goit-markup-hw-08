@@ -791,22 +791,11 @@ section.title {
   .join {
     display: block;
     margin-top: 60px;
-    margin-bottom: 60px;
-  }
-}
-
-@media (min-width: 768px) {
-  .join {
-    margin-top: 0px;
   }
 }
 
 @media (min-width: 1200px) {
   .join {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin-top: 0px;
     margin-left: 70px;
   }
 }
@@ -854,6 +843,7 @@ section.title {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    margin-top: 60px;
   }
 }
 
