@@ -41,6 +41,33 @@ margin-right: auto;
       @media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
         background-image: $gradient, url('/img/hero/desktop/Img-hero@2x.jpg');
       }
+    
+  
+
+
+
+
+//   @media screen and (min-width: 768px) {
+//     background-image: url(../images/headertab.jpg);
+
+//     @media screen and (min-device-pixel-ratio: 2),
+//         screen and (min-resolution: 192dpi),
+//         screen and (min-resolution: 2dppx) {
+//         background-image: url(../images/headertab@2x.jpg);
+//     }
+// }
+
+// @media screen and (min-width: 1200px) {
+//     background-size: 1600px 600px;
+//     background-image: url(../images/headerdec.jpg);
+
+//     @media screen and (min-device-pixel-ratio: 2),
+//         screen and (min-resolution: 192dpi),
+//         screen and (min-resolution: 2dppx) {
+//         background-image: url(../images/headerdec@2x.jpg);
+//     }
+// }
+      
   }  
 
 background-position: center;
