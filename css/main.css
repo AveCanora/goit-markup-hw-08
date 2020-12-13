@@ -721,6 +721,9 @@ section.title {
 }
 
 .container-footer {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-left: auto;
   margin-right: auto;
   padding: 0 15px;

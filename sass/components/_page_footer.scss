@@ -20,6 +20,7 @@
 }
 
 .container-footer {
+    justify-content: space-between;
   
     margin-left: auto;
     margin-right: auto;
@@ -119,6 +120,7 @@
 
 
 .subscribe { 
+   
     @include for-size(desktop){
         position: relative;
         margin-left: 93px;
