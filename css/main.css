@@ -931,16 +931,17 @@ section.title {
 /********************** СЕКЦИЯ ЭФФЕКТИВНЫЕ РЕШЕНИЯ **************************/
 .effect-solving {
   text-align: center;
-  min-height: 600px;
   /* max-width: 1600px; */
   margin-left: auto;
   margin-right: auto;
+  height: 600px;
   background-position: center;
-  padding-top: 200px;
 }
 
 @media screen and (max-width: 767px) {
   .effect-solving {
+    height: 400px;
+    padding-top: 118px;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("/img/hero/mobile/img-hero.jpg");
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/img/hero/mobile/img-hero.jpg");
   }
@@ -955,7 +956,7 @@ section.title {
 
 @media screen and (min-width: 768px) {
   .effect-solving {
-    height: 600px;
+    padding-top: 118px;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("/img/hero/tablet/img-hero.jpg");
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/img/hero/tablet/img-hero.jpg");
   }
@@ -970,6 +971,8 @@ section.title {
 
 @media screen and (min-width: 1200px) {
   .effect-solving {
+    background-size: 1600px 600px;
+    padding-top: 200px;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("/img/hero/desktop/img-hero.jpg");
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/img/hero/desktop/img-hero.jpg");
   }
@@ -983,6 +986,7 @@ section.title {
 }
 
 .title-h1 {
+  text-align: center;
   font-weight: 900;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -999,7 +1003,15 @@ section.title {
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 768px) {
+  .title-h1 {
+    width: 360px;
+    font-size: 26px;
+    line-height: 1.615;
+  }
+}
+
+@media (min-width: 480px) {
   .title-h1 {
     width: 360px;
     font-size: 26px;
@@ -1026,48 +1038,81 @@ section.title {
 
 /* ********************************************************************** */
 .backdrop {
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
-  opacity: 1;
-  visibility: visible;
-  -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-@media (min-width: 1200px) {
-  .backdrop {
-    position: fixed;
-  }
 }
 
 @media (max-width: 767px) {
   .backdrop {
-    padding-top: 94px;
-    padding-bottom: 94px;
-    padding-right: 15px;
-    padding-right: 15px;
+    padding: 15px;
+    overflow-y: scroll;
   }
 }
 
-.backdrop.is-hidden {
-  visibility: hidden;
-  opacity: 0;
-  pointer-events: none;
+@media (min-width: 768px) {
+  .backdrop {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+@media (max-width: 767px) {
+  .backdrop.is-hidden {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .backdrop.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+}
+
+@media (min-width: 768px) {
+  .backdrop.is-hidden .modal {
+    opacity: 0;
+    -webkit-transform: translate(-50%, -50%) scale(0.2) rotate(180deg);
+            transform: translate(-50%, -50%) scale(0.2) rotate(180deg);
+  }
 }
 
 .modal {
   position: relative;
   top: 50%;
   left: 50%;
-  width: 528px;
-  height: 581px;
   background-color: #ffffff;
   border-radius: 4px;
   -webkit-transform: translate(-50%, -50%) scale(1);
           transform: translate(-50%, -50%) scale(1);
+}
+
+@media (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
+}
+
+@media (min-width: 768px) {
+  .modal {
+    width: 450px;
+    height: 609px;
+  }
+}
+
+@media (min-width: 480px) {
+  .modal {
+    width: 450px;
+    height: 609px;
+  }
 }
 
 .btn-close {
@@ -1124,8 +1169,6 @@ section.title {
     padding: 0; */
   margin-left: 41px;
   margin-top: 30px;
-  width: 448px;
-  height: 40px;
   /* left: 576px;
     top: 382px; */
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -1142,6 +1185,27 @@ section.title {
   padding-left: 42px;
   /* background-image: url(../img/modal-form/person-black.svg); 
     background-repeat: no-repeat; */
+}
+
+@media (min-width: 1200px) {
+  .form-input {
+    width: 448px;
+    height: 40px;
+  }
+}
+
+@media (min-width: 768px) {
+  .form-input {
+    width: 370px;
+    height: 40px;
+  }
+}
+
+@media (min-width: 480px) {
+  .form-input {
+    width: 370px;
+    height: 40px;
+  }
 }
 
 .form-input:focus, .form-input:hover {
@@ -1254,8 +1318,6 @@ section.title {
 }
 
 .textarea-form {
-  height: 120px;
-  width: 448px;
   resize: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1274,6 +1336,27 @@ section.title {
   color: #000000;
   padding-left: 16px;
   padding-top: 12px;
+}
+
+@media (min-width: 1200px) {
+  .textarea-form {
+    height: 120px;
+    width: 448px;
+  }
+}
+
+@media (min-width: 768px) {
+  .textarea-form {
+    width: 370px;
+    height: 120px;
+  }
+}
+
+@media (min-width: 480px) {
+  .textarea-form {
+    width: 370px;
+    height: 120px;
+  }
 }
 
 .team-icon-link {

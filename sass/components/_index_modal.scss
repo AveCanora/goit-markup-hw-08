@@ -1,36 +1,64 @@
 
 .backdrop {
-    @include for-size(desktop){
-        position: fixed;
-    }
-    @include for-size(tablet-only){
-       padding-top: 94px;
-       padding-bottom: 94px;
-       padding-right: 15px;
-       padding-right: 15px;
-    }
+    position: fixed;
+    
     
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     background-color: rgba(0,0,0,0.5);
-    opacity: 1;
-    visibility: visible;
-    transition: opacity $time $cubic, visibility $time  $cubic
+
+    
+
+    @include for-size(tablet-only){
+        padding: 15px;
+        overflow-y: scroll;
+    }
+    @include for-size(tablet){
+        opacity: 1;
+        visibility: visible;
+        transition: opacity $time $cubic, visibility $time  $cubic
+    }
+
+
 }
 .backdrop.is-hidden{
-    visibility: hidden;
-    opacity: 0;
-    pointer-events: none;
+
+    @include for-size(tablet-only) {
+        display: none;
+      }
+      @include for-size(tablet) {
+        opacity: 0;
+        pointer-events: none;
+        visibility: hidden;
+      }
 }
+.backdrop.is-hidden .modal {
+    @include for-size(tablet){
+      opacity: 0;
+      transform: translate(-50%, -50%) scale(0.2) rotate(180deg);
+    }
+  }
 .modal{
+
     position: relative;
     top: 50%;
     left: 50%;
 
-    width: 528px;
-    height: 581px;
+    @include for-size(desktop){
+        width: 528px;
+        height: 581px;
+    }
+    @include for-size(tablet){
+        
+        width: 450px;
+        height: 609px;
+    }
+    @include for-size(mobile){
+        width: 450px;
+        height: 609px;
+    }
     background-color: $white;
     border-radius: 4px;
     transform: translate(-50%,-50%) scale(1);
@@ -86,8 +114,21 @@
     padding: 0; */
     margin-left: 41px;
     margin-top: 30px;
-    width: 448px;
-    height: 40px;
+
+    @include for-size(desktop){
+        width: 448px;
+        height: 40px;
+    }
+    @include for-size(tablet){
+        width: 370px;
+        height: 40px;
+    }
+    @include for-size(mobile){
+        width: 370px;
+        height: 40px;
+    }
+
+
     /* left: 576px;
     top: 382px; */
 
@@ -218,8 +259,19 @@
 
 
 .textarea-form{
-    height: 120px;
-    width: 448px;
+
+    @include for-size(desktop){
+        height: 120px;
+        width: 448px;
+    }
+    @include for-size(tablet){
+        width: 370px;
+        height: 120px;
+    }
+    @include for-size(mobile){
+        width: 370px;
+        height: 120px;
+    }
     resize: none;
     
     display: flex;
