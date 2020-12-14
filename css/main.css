@@ -769,10 +769,15 @@ section.title {
   margin-left: auto;
   margin-right: auto;
   padding: 0 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 @media (max-width: 767px) {
   .container-footer {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
@@ -782,11 +787,6 @@ section.title {
 
 @media (min-width: 1200px) {
   .container-footer {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
     width: 1200px;
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
