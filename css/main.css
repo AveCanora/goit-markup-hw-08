@@ -495,7 +495,6 @@ section.title {
 }
 
 .menu-container {
-  z-index: 1;
   padding: 0px;
   border-top: 2px solid #ECECEC;
   background-color: #ffffff;
@@ -505,6 +504,7 @@ section.title {
 
 .menu-container.is-open {
   display: block;
+  z-index: 1;
 }
 
 @media (min-width: 768px) {
@@ -736,7 +736,7 @@ section.title {
   background-color: #2F303A;
 }
 
-@media (max-width: 767px) {
+@media (min-width: 480px) {
   .footer-main {
     height: 463px;
     margin-top: 45px;
