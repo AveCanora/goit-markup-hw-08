@@ -7,7 +7,9 @@
     margin: 0;
     padding: 0;
     border: none;
+
     height: 60px;
+
     align-items: center;
     justify-content: space-between;
     background-color: transparent;
@@ -38,6 +40,7 @@
 .menu-container{
     z-index: 1;
     padding: 0px;
+    border-top: 2px solid #ECECEC;
     background-color: $white    ;
     text-align: center;
     font-size: 18px;
@@ -66,6 +69,7 @@
         display: inline-flex;
         justify-content: space-between;
         flex-grow: 2; 
+        border-top: 2px solid $white;
     }
 }
 // .navigation{
@@ -113,7 +117,7 @@
             padding-top: 60px;
 
         }
-        z-index: 999;
+        // z-index: 999;
         .item{
             display: flex;
             justify-content: center;
@@ -195,12 +199,26 @@
 color: $accent-cl;
 }
 .link.current::after{
-    // position: relative;
+    @include for-size(mobile){
+    position: relative;
+    top: 8px;
+    }
+    @include for-size(tablet){
+        position: relative;
+        top: 32px;
+        }
+    @include for-size(desktop){
+    position: relative;
+    top: 28px;
+    }
+
     content: "";
     display: block;
     height: 4px;
+    
     // width: 61px;
     background: #2196F3;
+    
     border-radius: 2px;
     margin-left: auto;
     margin-right: auto;

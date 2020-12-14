@@ -12,7 +12,7 @@
     height: 75px;
     margin: 0;
     margin-top: 10px;
-    text-align: justify;
+    text-align: left;
 }
 
 .title-h3{
@@ -47,7 +47,7 @@
     @include for-size(tablet){
         display: flex;
         flex-wrap: wrap;
-        margin: -5px;
+        margin: -15px;
 
     }
     @include for-size(desktop){
@@ -66,8 +66,8 @@
       
         @media screen and (min-width: $tablet) {
             
-            flex-basis: calc((100% - 4 * 5px)/2);
-            margin: 5px;
+            flex-basis: calc((100% - 4 * 15px)/2);
+            margin: 15px;
             }
         @media screen and (min-width: $desktop) {
             // flex-basis: calc((100% - 6* 10px)/3);

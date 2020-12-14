@@ -8,14 +8,19 @@
   
     padding-top: 60px;
     padding-bottom: 0;
-    @include for-size(desktop){
-    height: 252px;
-    margin-top: 94px;
-    }
+
     @include for-size(tablet-only){
-    height: 603px;
+    height: 463px;
     margin-top: 45px;
     }
+    @include for-size(tablet){
+        height: 463px;
+        margin-top: 45px;
+        }
+        @include for-size(desktop){
+            height: 252px;
+            margin-top: 94px;
+            }
     background-color: $bg-box;
 }
 

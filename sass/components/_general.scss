@@ -91,7 +91,7 @@ section.title {
     margin-bottom: 24px;
 }
 .page-header{
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid #ECECEC;
     position: relative;
 }
 
@@ -100,7 +100,13 @@ section.title {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    min-height: 60px;
+    @include for-size(desktop){
+        min-height: 80px;
+    }
+    @include for-size(tablet-only){
+        min-height: 60px;
+    }
+
 }
 
 // // usage

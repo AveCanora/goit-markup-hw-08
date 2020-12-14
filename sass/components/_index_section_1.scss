@@ -7,7 +7,7 @@ text-align: center;
 /* max-width: 1600px; */
 margin-left: auto;
 margin-right: auto;
-max-width: 1600px;
+
 height: 400px;
 // background-image: linear-gradient(  
 //     to right,
@@ -39,7 +39,7 @@ background-position: center;
     
     }
     @media screen and(min-width: $desktop) {
-      background-size: 1600px 600px;
+      
       padding-top: 200px;
       height: 600px;
       background-image: $gradient, url('../img/hero/desktop/img-hero.jpg');
@@ -80,6 +80,16 @@ text-align: center;
 font-weight: 900;
 letter-spacing: 0.06em;
 text-transform: uppercase;
+@include for-size(mobile){
+  width: 360px;
+  font-size:26px;
+  line-height: 1.615;
+}
+@include for-size(tablet){
+  width: 360px;
+  font-size:26px;
+  line-height: 1.615;
+}
 @include for-size(desktop){
     width: 696px;
 
@@ -88,16 +98,8 @@ text-transform: uppercase;
 
 }
 
-@include for-size(tablet){
-    width: 360px;
-    font-size:26px;
-    line-height: 1.615;
-}
-@include for-size(mobile){
-  width: 360px;
-  font-size:26px;
-  line-height: 1.615;
-}
+
+
 color: $white;
 
 margin: 0 auto;

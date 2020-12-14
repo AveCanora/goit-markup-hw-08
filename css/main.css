@@ -422,7 +422,7 @@ section.title {
 }
 
 .page-header {
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid #ECECEC;
   position: relative;
 }
 
@@ -436,7 +436,18 @@ section.title {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  min-height: 60px;
+}
+
+@media (min-width: 1200px) {
+  .page-header .nav {
+    min-height: 80px;
+  }
+}
+
+@media (max-width: 767px) {
+  .page-header .nav {
+    min-height: 60px;
+  }
 }
 
 /********************** оформление текста шапки и подвала***********************/
@@ -486,6 +497,7 @@ section.title {
 .menu-container {
   z-index: 1;
   padding: 0px;
+  border-top: 2px solid #ECECEC;
   background-color: #ffffff;
   text-align: center;
   font-size: 18px;
@@ -528,6 +540,7 @@ section.title {
     -webkit-box-flex: 2;
         -ms-flex-positive: 2;
             flex-grow: 2;
+    border-top: 2px solid #ffffff;
   }
 }
 
@@ -573,9 +586,6 @@ section.title {
 }
 
 @media (max-width: 767px) {
-  .site-nav {
-    z-index: 999;
-  }
   .site-nav .item:first-child {
     padding-top: 60px;
   }
@@ -669,6 +679,27 @@ section.title {
   margin-right: auto;
 }
 
+@media (min-width: 480px) {
+  .link.current::after {
+    position: relative;
+    top: 8px;
+  }
+}
+
+@media (min-width: 768px) {
+  .link.current::after {
+    position: relative;
+    top: 32px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .link.current::after {
+    position: relative;
+    top: 28px;
+  }
+}
+
 .accent {
   color: #2196F3;
 }
@@ -705,17 +736,24 @@ section.title {
   background-color: #2F303A;
 }
 
+@media (max-width: 767px) {
+  .footer-main {
+    height: 463px;
+    margin-top: 45px;
+  }
+}
+
+@media (min-width: 768px) {
+  .footer-main {
+    height: 463px;
+    margin-top: 45px;
+  }
+}
+
 @media (min-width: 1200px) {
   .footer-main {
     height: 252px;
     margin-top: 94px;
-  }
-}
-
-@media (max-width: 767px) {
-  .footer-main {
-    height: 603px;
-    margin-top: 45px;
   }
 }
 
@@ -934,7 +972,6 @@ section.title {
   /* max-width: 1600px; */
   margin-left: auto;
   margin-right: auto;
-  max-width: 1600px;
   height: 400px;
   background-color: #2F303A;
   background-size: cover;
@@ -973,7 +1010,6 @@ section.title {
 
 @media screen and (min-width: 1200px) {
   .effect-solving {
-    background-size: 1600px 600px;
     padding-top: 200px;
     height: 600px;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../img/hero/desktop/img-hero.jpg");
@@ -998,11 +1034,11 @@ section.title {
   margin-top: 0;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 480px) {
   .title-h1 {
-    width: 696px;
-    font-size: 44px;
-    line-height: 1.364;
+    width: 360px;
+    font-size: 26px;
+    line-height: 1.615;
   }
 }
 
@@ -1014,11 +1050,11 @@ section.title {
   }
 }
 
-@media (min-width: 480px) {
+@media (min-width: 1200px) {
   .title-h1 {
-    width: 360px;
-    font-size: 26px;
-    line-height: 1.615;
+    width: 696px;
+    font-size: 44px;
+    line-height: 1.364;
   }
 }
 
@@ -1438,7 +1474,7 @@ section.title {
   height: 75px;
   margin: 0;
   margin-top: 10px;
-  text-align: justify;
+  text-align: left;
 }
 
 .title-h3 {
@@ -1475,7 +1511,7 @@ section.title {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    margin: -5px;
+    margin: -15px;
   }
 }
 
@@ -1495,9 +1531,9 @@ section.title {
 
 @media screen and (min-width: 768px) {
   .icon-advantages {
-    -ms-flex-preferred-size: calc((100% - 4 * 5px)/2);
-        flex-basis: calc((100% - 4 * 5px)/2);
-    margin: 5px;
+    -ms-flex-preferred-size: calc((100% - 4 * 15px)/2);
+        flex-basis: calc((100% - 4 * 15px)/2);
+    margin: 15px;
   }
 }
 
@@ -1568,8 +1604,7 @@ section.title {
 .team-section {
   background-color: #F5F4FA;
   margin-top: 94px;
-  margin-bottom: 0;
-  padding-top: 94px;
+  padding-bottom: 94px;
   text-align: center;
 }
 
@@ -1601,7 +1636,7 @@ section.title {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    margin: -5px;
+    margin: -15px;
   }
 }
 
@@ -1630,9 +1665,9 @@ section.title {
   .team-li {
     height: 536px;
     width: 354px;
-    -ms-flex-preferred-size: calc((100% - 4 * 5px)/2);
-        flex-basis: calc((100% - 4 * 5px)/2);
-    margin: 5px;
+    -ms-flex-preferred-size: calc((100% - 4 * 15px)/2);
+        flex-basis: calc((100% - 4 * 15px)/2);
+    margin: 15px;
   }
 }
 
@@ -1748,7 +1783,7 @@ section.title {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    margin: -5px;
+    margin: -10px;
   }
 }
 
