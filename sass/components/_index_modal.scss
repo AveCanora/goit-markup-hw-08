@@ -47,7 +47,14 @@
     background-color: $white;
     border-radius: 4px;
    
-
+    @include for-size(mobile){
+        position: absolute;  
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%) scale(1);
+        max-width: 450px;
+        height: 609px;
+    }
 
     @include for-size(tablet){
         position: absolute;  
@@ -86,6 +93,11 @@
 
 }
 .modal-font{
+    @include for-size(tablet-only){
+        width: 370px;
+        height: 60px;
+         padding-bottom: 30px;
+    }
     padding-top: 40px;
     font-style: normal;
     font-weight: bold;

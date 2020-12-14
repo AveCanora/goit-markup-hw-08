@@ -769,15 +769,10 @@ section.title {
   margin-left: auto;
   margin-right: auto;
   padding: 0 15px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 @media (max-width: 767px) {
   .container-footer {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
@@ -787,6 +782,11 @@ section.title {
 
 @media (min-width: 1200px) {
   .container-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     width: 1200px;
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
@@ -1135,6 +1135,18 @@ section.title {
   border-radius: 4px;
 }
 
+@media (min-width: 480px) {
+  .modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%) scale(1);
+            transform: translate(-50%, -50%) scale(1);
+    max-width: 450px;
+    height: 609px;
+  }
+}
+
 @media (min-width: 768px) {
   .modal {
     position: absolute;
@@ -1187,6 +1199,14 @@ section.title {
   line-height: 23px;
   text-align: center;
   letter-spacing: 0.03em;
+}
+
+@media (max-width: 767px) {
+  .modal-font {
+    width: 370px;
+    height: 60px;
+    padding-bottom: 30px;
+  }
 }
 
 .form-style-input {

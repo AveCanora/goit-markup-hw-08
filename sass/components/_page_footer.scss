@@ -32,19 +32,20 @@
     // outline: 2px solid tomato;
 
     padding: 0 15px;
-    display: flex;
-    @include for-size(tablet-only){
 
-        flex-wrap: wrap;
+  
+    @include for-size(tablet-only){
+   
         justify-content: space-evenly;
         text-align: center;
     }
     
     @include for-size(desktop){
+        display: flex;
+        flex-wrap: wrap;
         width: 1200px;
         align-items: baseline;
-  
-    }
+      }
     
 
 }
