@@ -135,9 +135,10 @@
     @extend %list;
     @include for-size(tablet){
         .item{
-            display: block;
+            display: flex;
             text-align: left;
             font-size: 12px;
+            
         }
         
     }
@@ -145,6 +146,7 @@
         .item{
             display: inline-flex;
             align-items: baseline;
+            margin-left: 30px;
             
         }
         
@@ -153,11 +155,13 @@
         .item:first-child{
             padding-top: 20px;
             font-size: 18px; 
+           
         }
         .item{
             display: flex;
             justify-content: center;
             padding-bottom: 16px;
+            
          }
     }
 
@@ -241,12 +245,12 @@ color: $accent-cl;
 
     width: 16px;
     height: 16px;
-    fill: currentColor;
     
-    margin-right: 10px;
+    fill: currentColor;
+    margin-right: 6px;
 }
 .item .link{
-    display: block;
+    display: flex;
     align-items: center;
     // background-color: orchid;
     justify-content: center;

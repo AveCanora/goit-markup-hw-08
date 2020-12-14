@@ -606,7 +606,9 @@ section.title {
 
 @media (min-width: 768px) {
   .auth-nav .item {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     text-align: left;
     font-size: 12px;
   }
@@ -620,6 +622,7 @@ section.title {
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
+    margin-left: 30px;
   }
 }
 
@@ -708,11 +711,13 @@ section.title {
   width: 16px;
   height: 16px;
   fill: currentColor;
-  margin-right: 10px;
+  margin-right: 6px;
 }
 
 .item .link {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1229,9 +1234,9 @@ section.title {
     background-repeat: no-repeat; */
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 480px) {
   .form-input {
-    width: 448px;
+    width: 370px;
     height: 40px;
   }
 }
@@ -1243,9 +1248,9 @@ section.title {
   }
 }
 
-@media (min-width: 480px) {
+@media (min-width: 1200px) {
   .form-input {
-    width: 370px;
+    width: 448px;
     height: 40px;
   }
 }
@@ -1380,10 +1385,10 @@ section.title {
   padding-top: 12px;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 480px) {
   .textarea-form {
+    width: 370px;
     height: 120px;
-    width: 448px;
   }
 }
 
@@ -1394,10 +1399,10 @@ section.title {
   }
 }
 
-@media (min-width: 480px) {
+@media (min-width: 1200px) {
   .textarea-form {
-    width: 370px;
     height: 120px;
+    width: 448px;
   }
 }
 
