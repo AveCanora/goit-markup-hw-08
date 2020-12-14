@@ -1610,14 +1610,12 @@ section.title {
 
 @media (min-width: 480px) {
   .team-img {
-    height: 460px;
     width: 450px;
   }
 }
 
 @media (min-width: 768px) {
   .team-img {
-    height: 374px;
     width: 354px;
   }
 }
@@ -1625,7 +1623,6 @@ section.title {
 @media (min-width: 1200px) {
   .team-img {
     width: 270px;
-    height: 260px;
   }
 }
 

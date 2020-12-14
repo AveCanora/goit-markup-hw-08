@@ -12,16 +12,16 @@
 }
 .team-img{
     @include for-size(mobile){
-        height: 460px;
+        // height: 460px;
         width: 450px;
     }
     @include for-size(tablet){
-        height: 374px;
+        // height: 374px;
         width: 354px;
     }
     @include for-size(desktop){
         width: 270px;
-        height: 260px;
+        // height: 260px;
     }
 
 }
