@@ -1,224 +1,214 @@
 /************************ ПОДВАЛ ОБОИХ СТРАНИЦ *************************/
-.footer-main{
-   
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
-  
-    padding-top: 60px;
-    padding-bottom: 0;
+.footer-main {
+  margin-left: auto;
+  margin-right: auto;
 
-    @include for-size(mobile){
-    height: 463px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @include for-size(mobile) {
     margin-top: 45px;
-    }
-    @include for-size(tablet){
-        height: 463px;
-        margin-top: px;
-    }
-    @include for-size(desktop){
-        height: 252px;
-        margin-top: 94px;
-    }
-    background-color: $bg-box;
+  }
+  @include for-size(tablet) {
+    margin-top: px;
+  }
+  @include for-size(desktop) {
+    margin-top: 94px;
+  }
+  background-color: $bg-box;
 }
 
 .container-footer {
-    justify-content: space-between;
-  
-    margin-left: auto;
-    margin-right: auto;
-    // outline: 2px solid tomato;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 
-    padding: 0 15px;
+  // outline: 2px solid tomato;
+  text-align: center;
 
+  @include for-size(mobile) {
+    width: 480px;
+  }
+
+  @include for-size(tablet) {
+    width: 768px;
     display: flex;
-    @include for-size(tablet-only){
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    text-align: center;
+  }
 
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        text-align: center;
-    }
-    
-    @include for-size(desktop){
-        width: 1200px;
-        align-items: baseline;
-  
-    }
-    
-
+  @include for-size(desktop) {
+    width: 1200px;
+    align-items: baseline;
+    text-align: left;
+  }
 }
 
-.footer-link
-{
+.footer-link {
+  font-style: normal;
+  color: $white-gray;
 
-    font-style: normal;
-    color: $white-gray;
- 
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    list-style: none;
-    padding-left: 0;
-    margin-top: 20px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  list-style: none;
+  padding-left: 0;
+  margin-top: 20px;
 }
-.link.footer-adress
-{
-    color: $white;        
+.link.footer-adress {
+  color: $white;
 }
 .footer-margin {
-    margin-bottom: 9px;   
+  margin-bottom: 9px;
 }
 
 .webstudio-footer {
-    color: $white;
-    
+  color: $white;
 }
 
-.join { 
-   padding: 0;
-   color: $white;
+.join {
+  padding: 0;
+  color: $white;
 
-   @media screen and (max-width: 480px){
-        display: block;
-        margin-top: 60px;
-}
-
-   @include for-size(desktop){
-       margin-left: 70px;
-   }
-
-
-    width: 206px;
-    height: 86px;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 1.43;
-    letter-spacing: 0.03em;
-    
-    text-decoration: none;
-    /* background-color: red; */ 
-}
-
-.container-join{
-    display: flex;
-    list-style: none;
-    padding: 0;
-     
-
-    margin-top: 22px;
- 
-    margin-bottom: 0;
+  @media screen and (max-width: 767px) {
+    display: block;
+    margin-top: 60px;
     margin-left: auto;
     margin-right: auto;
-    justify-content:space-between;
-  
+  }
+
+  @include for-size(desktop) {
+    margin-left: 70px;
+  }
+
+  width: 206px;
+  height: 86px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.43;
+  letter-spacing: 0.03em;
+
+  text-decoration: none;
+  /* background-color: red; */
 }
 
+.container-join {
+  display: flex;
+  list-style: none;
+  padding: 0;
 
-.subscribe { 
-   
-    @include for-size(desktop){
-        position: relative;
-        margin-left: 93px;
-        width: 570px;
-        height: 86px;
-        
-        // background-color: aqua;
-    }
-    @include for-size(tablet-only){
- 
-        width: 400px;
-        // background-color: aqua;
-        align-items: center;
-        margin-top: 60px;
-    }
-    
+  margin-top: 22px;
 
-        color: $white;
-        padding: 0;
-        text-transform: uppercase;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 14px;
-        line-height: 1.43;
-        letter-spacing: 0.03em;
-        text-decoration: none;
-     /* background-color: aqua; */
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-between;
 }
-.btn-subscribe{
-    font-family: inherit;
-    color: $white;
-    border-radius: 4px;
-    border-color: $accent-cl;
-    background-color: $accent-cl;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.87;
-    letter-spacing: 0.06em;
 
-    
-    width: 200px;
-    height: 50px;
-    border: 1px solid $accent-cl;
+.subscribe {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 60px;
 
-    
-    @include for-size(desktop){
-        display: flex;
-        position: absolute;
-        top: 36px;
-        // left: 370px;
-        right: 0;
-    }
-
-    margin-top: 0;
-    margin-left: 0;
+  @include for-size(tablet) {
+    // background-color: aqua;
+    width: 450px;
     align-items: center;
-    padding-left: 29px;
-    padding-right: 28px;
-    background-image: url(../img/send.svg); 
-    background-size: 24px 24px;
-    background-position: 88%;
-    background-repeat: no-repeat;
+  }
+
+  @include for-size(desktop) {
+    width: 570px;
+    margin-left: auto;
+    margin-right: 0px;
+    margin-top: 0px;
+    // background-color: aqua;
+  }
+
+  color: $white;
+  padding: 0;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.43;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  /* background-color: aqua; */
 }
 
-.in-subscribe{
-    
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 1.25;
-  
-    align-items: center;
-    letter-spacing: 0.03em;
-
-    color: rgba(255, 255, 255, 0.6);
-    background-color:$bg-box;
-    width: 358px;
-    height: 50px;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    box-sizing: border-box;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-    border-radius: 4px;
-
-    @include for-size(desktop){
-        
+.footer-form {
+  @include for-size(desktop) {
     display: flex;
-    position: absolute;
-    top: 36px;
-    left: 0;
-    padding-left: 16px;
-    }
-
-    @include for-size(tablet-only){
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
+    margin-top: 20px;
+  }
 }
 
+.btn-subscribe {
+  font-family: inherit;
+  color: $white;
+  border-radius: 4px;
+  border-color: $accent-cl;
+  background-color: $accent-cl;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+
+  width: 200px;
+  height: 50px;
+  border: 1px solid $accent-cl;
+
+  @include for-size(desktop) {
+    display: flex;
+    margin-left: 12px;
+    margin-right: 0px;
+  }
+
+  margin-top: 0;
+  margin-left: 0;
+  align-items: center;
+  text-align: left;
+  padding-left: 25px;
+
+  background-image: url(../img/send.svg);
+  background-size: 24px 24px;
+  background-position: 88%;
+  background-repeat: no-repeat;
+}
+
+.in-subscribe {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.25;
+
+  align-items: center;
+  letter-spacing: 0.03em;
+
+  color: rgba(255, 255, 255, 0.6);
+  background-color: $bg-box;
+  width: 100%;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  @include for-size(desktop) {
+    display: flex;
+    width: 70%;
+    padding-left: 16px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+}
 
 /* ******************************************************************************* */
