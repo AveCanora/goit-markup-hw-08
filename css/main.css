@@ -1154,8 +1154,8 @@ section.title {
 @media screen and (min-width: 320px) {
   .modal {
     top: 60%;
-    width: 400px;
-    height: 640px;
+    width: 380px;
+    height: 609px;
   }
 }
 
@@ -1163,7 +1163,7 @@ section.title {
   .modal {
     top: 60%;
     width: 450px;
-    height: 640px;
+    height: 620px;
   }
 }
 
@@ -1275,7 +1275,7 @@ section.title {
 
 @media screen and (min-width: 320px) {
   .form-input {
-    width: 320px;
+    width: 300px;
     height: 40px;
   }
 }
@@ -1472,7 +1472,7 @@ section.title {
 
 @media screen and (min-width: 320px) {
   .textarea-form {
-    width: 320px;
+    width: 300px;
     height: 120px;
   }
 }
