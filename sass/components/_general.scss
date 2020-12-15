@@ -13,10 +13,13 @@ box-sizing: inherit;
 body {
     margin: 0;
     font-family: $mainFont;
-    font-style: normal;       
+    font-style: normal;   
+  
 }
 
-
+// body.modal-open {
+//     overflow: hidden;
+// }
 img{
     
     display: block;

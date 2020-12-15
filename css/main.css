@@ -1100,13 +1100,8 @@ section.title {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
-}
-
-@media (max-width: 767px) {
-  .backdrop {
-    padding: 15px;
-    overflow-y: scroll;
-  }
+  padding: 15px 15px;
+  overflow-y: scroll;
 }
 
 @media (min-width: 768px) {
@@ -1158,36 +1153,29 @@ section.title {
 
 @media screen and (min-width: 320px) {
   .modal {
-    max-width: 450px;
-    height: 609px;
+    width: 400px;
+    height: 640px;
   }
 }
 
 @media (min-width: 480px) {
   .modal {
-    max-width: 450px;
-    height: 609px;
+    width: 450px;
+    height: 640px;
   }
 }
 
 @media (min-width: 768px) {
   .modal {
-    max-width: 450px;
+    width: 450px;
     height: 609px;
   }
 }
 
 @media (min-width: 1200px) {
   .modal {
-    max-width: 528px;
+    width: 528px;
     height: 581px;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .modal {
-    max-width: 450px;
-    width: 100%;
   }
 }
 
@@ -1218,19 +1206,23 @@ section.title {
   letter-spacing: 0.03em;
 }
 
+@media (min-width: 480px) {
+  .modal-font {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+}
+
 @media (min-width: 768px) {
   .modal-font {
     padding-right: 40px;
     padding-left: 40px;
-    padding-bottom: 30px;
   }
 }
 
-@media screen and (max-width: 1199px) {
+@media (min-width: 1200px) {
   .modal-font {
-    padding-right: 40px;
-    padding-left: 40px;
-    padding-bottom: 30px;
+    width: 100%;
   }
 }
 
@@ -1288,7 +1280,7 @@ section.title {
 
 @media (min-width: 480px) {
   .form-input {
-    width: 320px;
+    width: 370px;
     height: 40px;
   }
 }
@@ -1353,6 +1345,12 @@ section.title {
   color: #757575;
 }
 
+@media screen and (min-width: 320px) {
+  .checkbox-label {
+    font-size: 12px;
+  }
+}
+
 @media (min-width: 480px) {
   .checkbox-label {
     font-size: 12px;
@@ -1398,6 +1396,12 @@ section.title {
   color: #2196F3;
   padding: 0px;
   margin: 0px;
+}
+
+@media screen and (min-width: 320px) {
+  .form-link {
+    font-size: 12px;
+  }
 }
 
 @media (min-width: 480px) {
@@ -1473,7 +1477,7 @@ section.title {
 
 @media (min-width: 480px) {
   .textarea-form {
-    width: 320px;
+    width: 370px;
     height: 120px;
   }
 }
