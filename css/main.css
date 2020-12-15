@@ -1763,6 +1763,12 @@ section.title {
   list-style: none;
 }
 
+@media screen and (max-width: 480px) {
+  .center-network {
+    padding: 0px 122px 0px 122px;
+  }
+}
+
 @media (min-width: 480px) {
   .center-network {
     padding: 0px 122px 0px 122px;

@@ -119,6 +119,9 @@
 .center-network {
     display: flex;
     list-style: none;
+    @media screen and (max-width: 480px){
+        padding: 0px 122px 0px 122px;
+    }
     @include for-size(mobile){
         padding: 0px 122px 0px 122px;
     }
