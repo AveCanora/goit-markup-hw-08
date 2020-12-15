@@ -47,37 +47,27 @@
 
     background-color: $white;
     border-radius: 4px;
+    position: absolute;  
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(1);
     @media screen and (min-width: 320px){
-        position: absolute;  
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%,-50%) scale(1);
         max-width: 450px;
         height: 609px;
     }
    
     @include for-size(mobile){
-        position: absolute;  
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%,-50%) scale(1);
+  
         max-width: 450px;
         height: 609px;
     }
 
     @include for-size(tablet){
-        position: absolute;  
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%,-50%) scale(1);
         max-width: 450px;
         height: 609px;
     }
     @include for-size(desktop){
-        top: 50%;
-        left: 50%;
         max-width: 528px;
-        width: 100%;
         height: 581px;
     }
     @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -98,6 +88,7 @@
     background-image: url(../img/modal-form/close1.svg); 
     border: none;
     background-color: $white;
+  
 }
 .btn-close:hover,
 .btn-close:focus{
@@ -105,12 +96,19 @@
 
 }
 .modal-font{
-@include for-size(tablet-only){
-    width: 370px;
-    height: 60px;
+@include for-size(tablet){
+    // width: 370px;
+    // height: 60px;
+    padding-right: 40px;
+    padding-left: 40px;
     padding-bottom: 30px;
 }
-    padding-top: 40px;
+@media screen and (max-width: 1199px){
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-bottom: 30px;
+}
+    padding-top: 20px;
     font-style: normal;
     font-weight: bold;
     font-size: 20px;
@@ -218,6 +216,7 @@
     position: absolute;
     top: 0;
 
+
 }
 
 .checkbox-label {
@@ -225,11 +224,19 @@
     display: inline-block;
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
+    @include for-size(mobile){
+    font-size: 12px;
+    }
+    @include for-size(tablet){
+        font-size: 12px;
+        }
+    @include for-size(desktop){
+        font-size: 14px;
+        }
     line-height: 1.714;
     letter-spacing: 0.03em;
     padding: 0;
-    top: 20px;
+    top: 10px;
     text-align: center;
     color: $gray;
     
@@ -238,7 +245,7 @@
 
     display:inline-block;
     vertical-align:middle;
-    margin-right: 5px;
+    margin-right: 0px;
     background-repeat: no-repeat;
     width: 16px;
     height: 15px;
@@ -254,24 +261,33 @@
     margin-top:20px;
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
+
+    @include for-size(mobile){
+    font-size: 12px;
+    }
+    @include for-size(tablet){
+        font-size: 12px;
+        }
+    @include for-size(desktop){
+        font-size: 14px;
+        }
     line-height: 1.714;
     letter-spacing: 0.03em;
     color: $accent-cl;
     padding: 0px;
     margin: 0px;
 }
-.label-check{
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 24px;
-    line-height: 1.714;
+// .label-check{
+//     font-style: normal;
+//     font-weight: normal;
+//     font-size: 14px;
+//     line-height: 24px;
+//     line-height: 1.714;
 
-    letter-spacing: 0.03em;
+//     letter-spacing: 0.03em;
 
-    color:$gray;
-}
+//     color:$gray;
+// }
 
 
 .btn-send{
@@ -295,12 +311,13 @@
     &:focus{
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     }
+ 
 }
 
 .textarea-form{
     @media screen and (min-width: 320px){
-        width: 3    20px;
-        height: 120px;
+        width: 320px;
+        height: 120px;     
     }
     @include for-size(mobile){
         width: 320px;
@@ -311,14 +328,15 @@
         height: 120px;
     }
     @include for-size(desktop){
-        height: 120px;
         width: 448px;
+        height: 120px;
     }
-
+ 
     resize: none;
     
     display: flex;
-    
+    margin-top: 0px;
+    margin-bottom: 0px;
     margin-left: 41px;
     margin-top: 30px;
     
@@ -334,6 +352,7 @@
    
     color: $black;
     padding-left: 16px;
+    padding-right: 16px;
     padding-top: 12px;
 }
 
