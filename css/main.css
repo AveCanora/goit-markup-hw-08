@@ -655,6 +655,7 @@ section.title {
 .link {
   display: block;
   padding-top: 0px;
+  position: relative;
   font-weight: 500;
   font-style: normal;
   line-height: 1.17166;
@@ -681,26 +682,27 @@ section.title {
   border-radius: 2px;
   margin-left: auto;
   margin-right: auto;
+  width: 100%;
 }
 
 @media (min-width: 480px) {
   .link.current::after {
-    position: relative;
-    top: 8px;
+    position: absolute;
+    top: 30px;
   }
 }
 
 @media (min-width: 768px) {
   .link.current::after {
-    position: relative;
-    top: 32px;
+    position: absolute;
+    top: 44px;
   }
 }
 
 @media (min-width: 1200px) {
   .link.current::after {
-    position: relative;
-    top: 28px;
+    position: absolute;
+    top: 44px;
   }
 }
 

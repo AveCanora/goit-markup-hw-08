@@ -185,7 +185,7 @@
 .link{
     display: block;
     padding-top: 0px;
-
+position: relative;
     font-weight: 500;
     font-style: normal;
     
@@ -207,29 +207,32 @@
 color: $accent-cl;
 }
 .link.current::after{
+    // position: absolute;
+    // top: 28px;
     @include for-size(mobile){
-    position: relative;
-    top: 8px;
+    position: absolute;
+    top: 30px;
     }
     @include for-size(tablet){
-        position: relative;
-        top: 32px;
+        position: absolute;
+        top: 44px;
         }
     @include for-size(desktop){
-    position: relative;
-    top: 28px;
+    position: absolute;
+    top: 44px;
     }
-
+  
     content: "";
     display: block;
     height: 4px;
-    
+ 
     // width: 61px;
     background: #2196F3;
     
     border-radius: 2px;
     margin-left: auto;
     margin-right: auto;
+    width: 100%;
 }
 
 
