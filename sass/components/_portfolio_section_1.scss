@@ -1,9 +1,12 @@
 /* ***********************СТРАНИЦА ПОРТФОЛИО******************************** */
 .btn-container {
-
+    @media screen and (min-width: 320px){
+        text-align: left;
+        padding-top: 50px;     
+    }
     @include for-size(mobile){
         text-align: left;
-        padding-top: 66px;
+        padding-top: 50px;
     }
     @include for-size(tablet){
         text-align: center; 
