@@ -733,50 +733,51 @@ section.title {
 
 /************************ ПОДВАЛ ОБОИХ СТРАНИЦ *************************/
 .footer-main {
-  padding-left: 15px;
-  padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
   padding-top: 60px;
-  padding-bottom: 0;
+  padding-bottom: 60px;
   background-color: #2F303A;
 }
 
 @media (min-width: 480px) {
   .footer-main {
-    height: 463px;
     margin-top: 45px;
   }
 }
 
 @media (min-width: 768px) {
   .footer-main {
-    height: 463px;
     margin-top: px;
   }
 }
 
 @media (min-width: 1200px) {
   .footer-main {
-    height: 252px;
     margin-top: 94px;
   }
 }
 
 .container-footer {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   margin-left: auto;
   margin-right: auto;
-  padding: 0 15px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  padding-left: 15px;
+  padding-right: 15px;
+  text-align: center;
 }
 
-@media (max-width: 767px) {
+@media (min-width: 480px) {
   .container-footer {
+    width: 480px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container-footer {
+    width: 768px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     -webkit-box-pack: space-evenly;
@@ -792,6 +793,7 @@ section.title {
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
+    text-align: left;
   }
 }
 
@@ -833,10 +835,12 @@ section.title {
   /* background-color: red; */
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
   .join {
     display: block;
     margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -862,6 +866,9 @@ section.title {
 }
 
 .subscribe {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 60px;
   color: #ffffff;
   padding: 0;
   text-transform: uppercase;
@@ -874,22 +881,30 @@ section.title {
   /* background-color: aqua; */
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 768px) {
   .subscribe {
-    position: relative;
-    margin-left: 93px;
-    width: 570px;
-    height: 86px;
-  }
-}
-
-@media (max-width: 767px) {
-  .subscribe {
-    width: 400px;
+    width: 450px;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-top: 60px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .subscribe {
+    width: 570px;
+    margin-left: auto;
+    margin-right: 0px;
+    margin-top: 0px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .footer-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 20px;
   }
 }
 
@@ -912,8 +927,8 @@ section.title {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-left: 29px;
-  padding-right: 28px;
+  text-align: left;
+  padding-left: 25px;
   background-image: url(../img/send.svg);
   background-size: 24px 24px;
   background-position: 88%;
@@ -925,9 +940,8 @@ section.title {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    position: absolute;
-    top: 36px;
-    right: 0;
+    margin-left: 12px;
+    margin-right: 0px;
   }
 }
 
@@ -942,7 +956,7 @@ section.title {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
   background-color: #2F303A;
-  width: 358px;
+  width: 100%;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   -webkit-box-sizing: border-box;
@@ -950,6 +964,8 @@ section.title {
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 @media (min-width: 1200px) {
@@ -957,17 +973,10 @@ section.title {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    position: absolute;
-    top: 36px;
-    left: 0;
+    width: 70%;
     padding-left: 16px;
-  }
-}
-
-@media (max-width: 767px) {
-  .in-subscribe {
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 0px;
+    margin-bottom: 0px;
   }
 }
 
